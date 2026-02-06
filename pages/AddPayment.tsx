@@ -174,9 +174,9 @@ const AddPayment: React.FC = () => {
                 value={receiverType}
                 onChange={(e) => handleReceiverTypeChange(e.target.value)}
               >
-                <option value="Admin">Admin</option>
-                <option value="Sales Team">Sales Team</option>
-                <option value="Accounts">Accounts</option>
+                <option value="Rajesh">Rajesh</option>
+                <option value="Vijay Kumar">Vijay Kumar</option>
+                <option value="Ranjeet kumar">Ranjeet Kumar</option>
                 <option value="Other">Other (Custom)</option>
               </select>
               

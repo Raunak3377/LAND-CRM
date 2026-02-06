@@ -94,6 +94,7 @@ const PlotDetails: React.FC = () => {
                     <tr>
                       <th className="pb-3 px-2 font-medium">Date</th>
                       <th className="pb-3 px-2 font-medium">Mode</th>
+                      <th className="pb-3 px-2 font-medium">Received By</th>
                       <th className="pb-3 px-2 font-medium text-right">Amount</th>
                     </tr>
                   </thead>
@@ -102,6 +103,7 @@ const PlotDetails: React.FC = () => {
                       <tr key={pay.payment_id}>
                         <td className="py-3 px-2 text-slate-700">{pay.date}</td>
                         <td className="py-3 px-2 text-slate-500">{pay.mode}</td>
+                        <td className="py-3 px-2 text-slate-500 italic text-sm">{pay.received_by || 'N/A'}</td>
                         <td className="py-3 px-2 text-right font-semibold text-slate-900">{formatCurrency(pay.amount)}</td>
                       </tr>
                     ))}
